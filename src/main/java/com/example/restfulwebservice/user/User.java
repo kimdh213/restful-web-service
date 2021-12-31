@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
@@ -12,6 +13,7 @@ import java.util.Date;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor // 디폴트 생성자 생성
 // @JsonIgnoreProperties(value={"password"})
 // @JsonIgnoreProperties 는 아예 안보여주도록 설정
 // @JsonIgnoreProperties(value={"",""}) 를 이용해서 특정 변수정보가 외부에 노출되지 않도록 설정
